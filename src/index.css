@@ -1,0 +1,154 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style: none;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  width: 100%;
+  margin: 30px 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  width: 84px;
+  height: 73px;
+}
+.header a{
+
+  padding: 10px;
+}
+.header ul {
+  display: flex;
+  width: 40%;
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+.lang{
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img {
+  width: 84px;
+  height: 73px;
+}
+.footer-inside{
+  display: flex;
+  width: 100%;
+  margin: 10px 120px;
+  align-items: flex-end;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+.footer-logo{
+  display: flex;
+  width: 10%;
+  justify-content: flex-start;
+}
+ .footer-links{
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  width: 86%;
+  gap: 26px;
+}
+.footer-links a {
+  display: flex;
+  align-items: flex-end;
+  font-size: 3rem;
+}
+.footer-links a:first-child {
+  display: flex;
+  align-items: center;
+}
+.footer-links img {
+  width: 37.5px;
+  height: 37.5px;
+  margin: 5px;
+}
+.footer-links ul{
+  display: flex;
+  width: 40%;
+  justify-self: flex-start;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+} 
+.copyright{
+ display: flex;
+ width: 100%;
+ margin-bottom: 80px;
+ 
+}
+.copyright p{
+  margin: 10px 120px;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 1.75rem;
+}
+
+
+@media screen and (max-width:1280px) {
+  .header ul {
+    width: 50%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .header ul {
+    width: 55%;
+  }
+  .header {
+    margin: 30px 60px;
+  }
+  .footer-logo {
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+  }
+}
